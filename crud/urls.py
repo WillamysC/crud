@@ -20,5 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.DetailsTable.as_view()),
+    path('update/<int:pk>', views.DetailsUpdate.as_view()),
+    path('delete/<int:pk>', views.DetailsUpdate.as_view()),
 
 ]
